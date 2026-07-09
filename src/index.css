@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@400;500;600;700;800;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, monospace;
+  --font-serif: "Fraunces", ui-serif, Georgia, Cambria, serif;
+}
+
+@layer utilities {
+  .text-outline {
+    -webkit-text-stroke: 1px currentColor;
+    color: transparent;
+  }
+}
+
+/* Base Bold Styles as requested: all body and heading text is bold throughout */
+body {
+  font-family: var(--font-sans);
+  background-color: #ffe1ec;
+  color: #5b1030;
+  font-weight: 700; /* Bold weights throughout! */
+}
+
+/* Custom scrolling marquee animation */
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 30s linear infinite;
+}
+
+/* Floating soft blobs animation */
+@keyframes drift1 {
+  0%, 100% { transform: translate(0px, 0px) scale(1) rotate(0deg); }
+  33% { transform: translate(30px, -50px) scale(1.1) rotate(120deg); }
+  66% { transform: translate(-20px, 20px) scale(0.95) rotate(240deg); }
+}
+
+@keyframes drift2 {
+  0%, 100% { transform: translate(0px, 0px) scale(1) rotate(0deg); }
+  33% { transform: translate(-40px, 40px) scale(0.9) rotate(-120deg); }
+  66% { transform: translate(30px, -20px) scale(1.15) rotate(-240deg); }
+}
+
+.animate-drift-1 {
+  animation: drift1 25s ease-in-out infinite;
+}
+
+.animate-drift-2 {
+  animation: drift2 30s ease-in-out infinite;
+}
+
+.animate-drift-3 {
+  animation: drift1 35s ease-in-out infinite reverse;
+}
+
+.animate-drift-4 {
+  animation: drift2 20s ease-in-out infinite reverse;
+}
+
+/* Heartbeat pulse animation for contact CTA */
+@keyframes pulse-ring {
+  0% { transform: scale(0.95); opacity: 0.8; box-shadow: 0 0 0 0 rgba(255, 79, 147, 0.7); }
+  70% { transform: scale(1); opacity: 1; box-shadow: 0 0 0 15px rgba(255, 79, 147, 0); }
+  100% { transform: scale(0.95); opacity: 0.8; box-shadow: 0 0 0 0 rgba(255, 79, 147, 0); }
+}
+
+.animate-pulse-ring {
+  animation: pulse-ring 2s infinite;
+}
+
+/* Custom Hide Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #ffe1ec;
+}
+::-webkit-scrollbar-thumb {
+  background: #ffd0e0;
+  border-radius: 5px;
+  border: 2px solid #ffe1ec;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ff4f93;
+}
+

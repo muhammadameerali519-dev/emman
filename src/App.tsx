@@ -1,0 +1,66 @@
+/**
+ * @license
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+import CustomCursor from './components/CustomCursor';
+import Navbar from './components/Navbar';
+import Hero from './components/Hero';
+import Marquee from './components/Marquee';
+import About from './components/About';
+import Gallery from './components/Gallery';
+import PullQuote from './components/PullQuote';
+import Exhibitions from './components/Exhibitions';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
+import ScrollReveal from './components/ScrollReveal';
+
+export default function App() {
+  return (
+    <div className="relative min-h-screen bg-[#ffe1ec] text-[#5b1030] selection:bg-[#ff4f93] selection:text-white overflow-x-hidden antialiased">
+      {/* Interactive Custom Cursor */}
+      <CustomCursor />
+
+      {/* Floating Navigation Bar */}
+      <Navbar />
+
+      {/* Main Layout Sections */}
+      <main>
+        {/* Hero Section (Loaded directly with its own staggered reveal) */}
+        <Hero />
+
+        {/* Marquee Strip */}
+        <Marquee />
+
+        {/* Selected Gallery Grid with scroll reveal */}
+        <ScrollReveal>
+          <Gallery />
+        </ScrollReveal>
+
+        {/* About the Artist Section with scroll reveal */}
+        <ScrollReveal>
+          <About />
+        </ScrollReveal>
+
+        {/* Centered Pull Quote Section with scroll reveal */}
+        <ScrollReveal>
+          <PullQuote />
+        </ScrollReveal>
+
+        {/* Exhibitions Timeline/Table with scroll reveal */}
+        <ScrollReveal>
+          <Exhibitions />
+        </ScrollReveal>
+
+        {/* Pulsing Contact CTA with scroll reveal */}
+        <ScrollReveal>
+          <Contact />
+        </ScrollReveal>
+      </main>
+
+      {/* Footer Section */}
+      <Footer />
+    </div>
+  );
+}
+
