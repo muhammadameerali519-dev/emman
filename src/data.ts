@@ -16,7 +16,7 @@ export const ARTWORKS: Artwork[] = [
     medium: 'Reclaimed Textile, Oil & Gold Thread',
     year: '2024',
     dimensions: '48" x 36"',
-    image: '/src/assets/images/artwork_sialkot_monologue_1_1783911970439.jpg',
+    image: 'https://framer.pk/cdn/shop/products/MHM7491.jpg?v=1646220034',
   },
   {
     id: 'art-2',
@@ -25,7 +25,7 @@ export const ARTWORKS: Artwork[] = [
     medium: 'Indigo Ink & Oil on Raw Linen',
     year: '2025',
     dimensions: '60" x 40"',
-    image: '/src/assets/images/artwork_echoes_chenab_1783912117734.jpg',
+    image: 'https://www.toyzone.pk/cdn/shop/files/acrylicpaintingdeal_8cb25910-03d9-4309-a277-e10f7ebf3956_1280x.jpg?v=1751364269',
   },
   {
     id: 'art-3',
@@ -34,7 +34,7 @@ export const ARTWORKS: Artwork[] = [
     medium: 'Impasto Oil on Canvas',
     year: '2023',
     dimensions: '36" x 36"',
-    image: '/src/assets/images/artwork_floral_sialkot_1783585932460.jpg',
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQ7BwsvtG-O1on3cov1PWaZDm-XBuob6joODAlVEN_9q9s9M1MckPigv4&s=10',
   },
   {
     id: 'art-4',
@@ -43,7 +43,7 @@ export const ARTWORKS: Artwork[] = [
     medium: 'Hand-Stitched Fabric & Ink Collage',
     year: '2024',
     dimensions: '54" x 42"',
-    image: '/src/assets/images/artwork_reclaimed_tapestry_1783585949589.jpg',
+    image: 'https://i.pinimg.com/736x/e2/3c/8b/e23c8b00932660807f87049333ac4dad.jpg',
   },
   {
     id: 'art-5',
@@ -52,7 +52,7 @@ export const ARTWORKS: Artwork[] = [
     medium: 'Tactile Oil & Stitched Canvas',
     year: '2026',
     dimensions: '72" x 48"',
-    image: '/src/assets/images/artwork_ink_textile_1783585974133.jpg',
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfa4nUPnJ8zT-nbkoyrhiyZHITt28oBD2yhFnBmUBt0REnOBsHwQZRemMR&s=10',
   },
   {
     id: 'art-6',
@@ -61,7 +61,7 @@ export const ARTWORKS: Artwork[] = [
     medium: 'Reclaimed Denim, Gesso & Ink',
     year: '2025',
     dimensions: '48" x 36"',
-    image: '/src/assets/images/artwork_sialkot_monologue_1_1783911970439.jpg', // Reuse first artwork beautifully
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQ3qXEqFat28-Z6vkTUyNC_q8lCy-6QVqN0a59BopzjSDznXymzlypaLA&s=10',
   },
 ];
 

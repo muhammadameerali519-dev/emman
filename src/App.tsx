@@ -17,6 +17,7 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import ScrollReveal from './components/ScrollReveal';
 import OpeningScreen from './components/OpeningScreen';
+import FloatingContact from './components/FloatingContact';
 
 export default function App() {
   const [isIntroFinished, setIsIntroFinished] = useState(false);
@@ -91,6 +92,9 @@ export default function App() {
 
           {/* Footer Section */}
           <Footer />
+
+          {/* Floating WhatsApp and Instagram Contact Controls */}
+          <FloatingContact />
         </motion.div>
       )}
     </div>
