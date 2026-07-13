@@ -1,6 +1,6 @@
 import { Artwork, Exhibition, Stat } from './types';
 
-export const PORTRAIT_IMAGE = '/src/assets/images/emaan_portrait_mirror_selfie_1783586759911.jpg';
+export const PORTRAIT_IMAGE = 'https://i.pinimg.com/564x/80/34/3e/80343e69d0c5c22e827523668f76ef0b.jpg';
 
 export const STATS: Stat[] = [
   { label: 'Years of Practice', value: 10, suffix: '+' },
@@ -16,7 +16,7 @@ export const ARTWORKS: Artwork[] = [
     medium: 'Reclaimed Textile, Oil & Gold Thread',
     year: '2024',
     dimensions: '48" x 36"',
-    image: '/src/assets/images/artwork_oil_textile_1783585899202.jpg',
+    image: '/src/assets/images/artwork_sialkot_monologue_1_1783911970439.jpg',
   },
   {
     id: 'art-2',
@@ -25,7 +25,7 @@ export const ARTWORKS: Artwork[] = [
     medium: 'Indigo Ink & Oil on Raw Linen',
     year: '2025',
     dimensions: '60" x 40"',
-    image: '/src/assets/images/artwork_indigo_ink_1783585915353.jpg',
+    image: '/src/assets/images/artwork_echoes_chenab_1783912117734.jpg',
   },
   {
     id: 'art-3',
@@ -61,7 +61,7 @@ export const ARTWORKS: Artwork[] = [
     medium: 'Reclaimed Denim, Gesso & Ink',
     year: '2025',
     dimensions: '48" x 36"',
-    image: '/src/assets/images/artwork_oil_textile_1783585899202.jpg', // Reuse first artwork beautifully
+    image: '/src/assets/images/artwork_sialkot_monologue_1_1783911970439.jpg', // Reuse first artwork beautifully
   },
 ];
 
