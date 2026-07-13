@@ -18,6 +18,7 @@ import Footer from './components/Footer';
 import ScrollReveal from './components/ScrollReveal';
 import OpeningScreen from './components/OpeningScreen';
 import FloatingContact from './components/FloatingContact';
+import MaterialLab from './components/MaterialLab';
 
 export default function App() {
   const [isIntroFinished, setIsIntroFinished] = useState(false);
@@ -72,6 +73,11 @@ export default function App() {
             {/* About the Artist Section with scroll reveal */}
             <ScrollReveal>
               <About />
+            </ScrollReveal>
+
+            {/* Interactive Material Laboratory with scroll reveal */}
+            <ScrollReveal>
+              <MaterialLab />
             </ScrollReveal>
 
             {/* Centered Pull Quote Section with scroll reveal */}

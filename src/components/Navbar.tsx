@@ -7,6 +7,7 @@ export default function Navbar() {
   const navLinks = [
     { label: 'Work', href: '#work' },
     { label: 'About', href: '#about' },
+    { label: 'Studio Lab', href: '#materials-studio' },
     { label: 'Exhibitions', href: '#exhibitions' },
     { label: 'Contact', href: '#contact' },
   ];
